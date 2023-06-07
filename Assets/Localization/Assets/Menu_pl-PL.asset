@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Menu_pl-PL
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pl-PL
+  m_SharedData: {fileID: 11400000, guid: c9e1515d39f9e2049ae5243da535eb5e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 177537138688
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 244016857088
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292523982848
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 441904119808
+    m_Localized: "Pe\u0142ny ekran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 526431928320
+    m_Localized: "Zatwierd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604601171968
+    m_Localized: "D\u017Awi\u0119k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691519733760
+    m_Localized: Angielski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707831382016
+    m_Localized: Polski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5046455555964928
+    m_Localized: "Zatwierd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5074332481601536
+    m_Localized: Podaj nazwy grup po ","
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5074520038293504
+    m_Localized: "Przyk\u0142adowo: groupa1,groupa2"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

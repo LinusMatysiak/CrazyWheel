@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 4b564d97f8ac93c4aa8d41d0c724abc9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Humanst521 BT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 69ad01e59a7c8d045a32adc0d8766612, type: 3}
+  - {fileID: 12800000, guid: 03f054d86192c9b46b39ba2c2e98b4bb, type: 3}
+  - {fileID: 12800000, guid: a23648d607a87c54fb43291a6dfcb4f3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
