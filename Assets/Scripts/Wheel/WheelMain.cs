@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Random = UnityEngine.Random;
 using TMPro;
-
+using UnityEngine.InputSystem;
 
 namespace CirclePiecesUI
 {
@@ -23,6 +23,8 @@ namespace CirclePiecesUI
         public TMP_Text DrawnCategory;
         public Button SpinButton;
         public GameObject ButtonText;
+
+        public GameObject CategoryPanel;
 
         private System.Random rand = new System.Random();
 
@@ -97,7 +99,7 @@ namespace CirclePiecesUI
         {
             if (isSpinning)
                 return;
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Keyboard.current.spaceKey.wasPressedThisFrame) {
                 spin();
             }
         }
@@ -123,9 +125,10 @@ namespace CirclePiecesUI
             .DORotate(targetRotation, spinDuration, RotateMode.FastBeyond360)
             .SetEase(Ease.InOutQuart)
             .OnComplete(() => {
+                //CategoryPanel.GetComponent<DropAnimation>().PanelDropIn();
                 DrawnCategory.text = circlePieces[i].Label;
-                SpinButton.interactable = true;
                 ButtonText.SetActive(true);
+                SpinButton.interactable = true;
                 isSpinning = false;
             });
         }

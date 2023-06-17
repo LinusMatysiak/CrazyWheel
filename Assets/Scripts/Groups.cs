@@ -15,7 +15,6 @@ public class Groups : MonoBehaviour
     [SerializeField] private GameObject VictoryPanel;
     //Victory
     private void Awake() {
-        int Random = random.Next(0,225);
         VictoryPanel = GameObject.FindWithTag("VictoryPanel");
     }
     private void Start() {

@@ -14,8 +14,8 @@ namespace CirclePiecesUI
     public class AdjustmentsCategories : MonoBehaviour
     {
         public TMP_InputField Inputcat;
-        public static CirclePieces[] dataPieces = new CirclePieces[12];
-
+        public static CirclePieces[] dataPieces; //dataPieces = new CirclePieces[12];
+        public static int CircleLenght;
         public void apply()
         {
             catadd();
@@ -27,7 +27,7 @@ namespace CirclePiecesUI
             {
                 string[] array = xyz.Split(','); // dzieli tekst w tablicy w miejscu ","
                 dataPieces = new CirclePieces[array.Length];
-                Debug.Log(dataPieces.Length);
+                CircleLenght = array.Length;
                 for (int i = 0; i < array.Length; i++) // wykonuje siê tak d³ugo, ile mamy indexów
                 {
                     CirclePieces data = new CirclePieces();

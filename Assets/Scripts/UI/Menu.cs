@@ -47,12 +47,15 @@ public class Menu : MonoBehaviour
     }
     public void Fullscreen()    // nie dzia³a w runtime
     {
-        if (Screen.fullScreenMode == FullScreenMode.FullScreenWindow) { // sprawdza czy jest w fullscreen czy w okienku, je¿eli jest w fullscreen wykona siê to
+        if (Screen.fullScreenMode == FullScreenMode.FullScreenWindow && FullscreenToggle.isOn == false) // sprawdza czy jest w fullscreen czy w okienku, je¿eli jest w fullscreen wykona siê to
+        {
             FullscreenToggle.isOn = false;
-            Screen.fullScreenMode = FullScreenMode.Windowed;    // ustawia okienko
-        } else {   // je¿eli aplikacja jest w okienku wykona siê to
+            Screen.fullScreenMode = FullScreenMode.Windowed; // ustawia okienko
+        }
+        if (Screen.fullScreenMode == FullScreenMode.Windowed && FullscreenToggle.isOn == true) // je¿eli aplikacja jest w okienku wykona siê to
+        {
             FullscreenToggle.isOn = true;
-            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;    // ustawia fullscreen
+            Screen.fullScreenMode = FullScreenMode.FullScreenWindow; // ustawia fullscreen
         }
     }
     void Resolution()
@@ -80,6 +83,7 @@ public class Menu : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex]; // rozdzielczoœæ = index lokalnej zminennej
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen); // rozdzielczoœæ ekranu = rozdzielczoœæ powi¹zana z indexem
         //resolution
+        Fullscreen();
     }
     //ingamemenu
     public void Pause()
